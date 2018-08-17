@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Bakr</string>
+    <string name="no_internet_connection">No internet connection</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="recipe_ingredients">Recipe Ingredients</string>
+    <string name="show_recipe_ingredients">Show Recipe Ingredients</string>
+    <string name="hide_recipe_ingredients">Hide Recipe Ingredients</string>
+    <string name="recipe_image">Recipe Image</string>
+
+
+    <string name="guess">Can you guess the composer?</string>
+    <string name="notification_text">Press play to hear the piece!</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="restart">Restart</string>
+    <string name="cup">CUP :</string>
+
+    <string name="recipe_ingre">%1$d.</string>
+    <string name="servings">%1$s Servings</string>
+
+
+    <array name="recipe_images_array">
+        <item>https://www.recipeboy.com/wp-content/uploads/2016/09/No-Bake-Nutella-Pie.jpg</item>
+        <item>http://homecookingadventure.com/images/recipes/brownies.jpg</item>
+        <item>https://iambaker.net/wp-content/uploads/2014/02/homemade-cake-mix-4.jpg</item>
+        <item>
+            https://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/12/9/0/FNK_Cheesecake_s4x3.jpg.rend.hgtvcom.616.462.suffix/1387411272847.jpeg
+        </item>
+    </array>
+
+    <array name="autosize_text_sizes">
+        <item>10sp</item>
+        <item>12sp</item>
+        <item>20sp</item>
+        <item>40sp</item>
+        <item>100sp</item>
+    </array>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="widget_image">Widget Image</string>
+    <string name="favourite_recipe">Favourite Recipe</string>
+    <string name="no_fav_yum_yums">You have no favourite Yum Yums.</string>
+    <string name="my_favourites">My Favourites</string>
+    <string name="favourites">Favourites</string>
+    <string name="star_recipe">Star Recipe</string>
+    <string name="star_recipe_pref">star_recipe</string>
+    <string name="bakr_star_recipe">Bakr - Star Recipe</string>
+    <string name="star_recipe_ingredients">Star Recipe Ingredients</string>
+</resources>

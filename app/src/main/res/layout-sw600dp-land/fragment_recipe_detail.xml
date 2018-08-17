@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_recipe_detail_two_pane_tab"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <!--
+    This layout is a two-pane layout for the master/detail flow.
+    -->
+
+    <!-- The static MasterListFragment -->
+    <!--<fragment
+        android:id="@+id/recipe_detail_fragment"
+        android:name="com.kshitizbali.bakr.RecipeDetailFragment"
+        android:layout_width="250dp"
+        android:layout_height="match_parent" />-->
+
+
+    <!-- <FrameLayout
+         android:id="@+id/recipe_detail_frame_tab"
+         android:layout_width="250dp"
+         android:layout_height="match_parent"
+         android:scaleType="centerInside" />-->
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="350dp"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/tvIngredients"
+                style="@android:style/TextAppearance.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/show_recipe_ingredients"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvIngredients">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvRecipeIngre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/white"
+                    android:visibility="gone" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvRecipeSteps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <!-- A small divider -->
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray" />
+
+    <!-- LinearLayout that arranges all three Android-Me body part images vertically -->
+    <LinearLayout
+        android:id="@+id/bakr_tab_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/item_margin"
+        android:paddingLeft="@dimen/item_margin"
+        android:paddingRight="@dimen/item_margin"
+        android:paddingTop="@dimen/item_margin">
+
+        <!-- Three vertically arranged body part fragments - the frame layouts are containers -
+        one for each Android-Me part (head, body, legs) -->
+
+
+        <!--<fragment
+            android:id="@+id/recipe_step_detail_fragment"
+            android:name="com.kshitizbali.bakr.RecipeStepDetailFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+-->
+        <FrameLayout
+            android:id="@+id/recipe_step_detail_frame_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside" />
+
+        <!-- <FrameLayout
+             android:id="@+id/body_container"
+             android:layout_width="match_parent"
+             android:layout_height="180dp"
+             android:scaleType="centerInside" />
+
+         <FrameLayout
+             android:id="@+id/leg_container"
+             android:layout_width="match_parent"
+             android:layout_height="180dp"
+             android:scaleType="centerInside" />-->
+
+
+    </LinearLayout>
+
+</LinearLayout>
